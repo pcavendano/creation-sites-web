@@ -43,3 +43,80 @@ section {
 #wrapper{
     background: white;
 }
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, [col] 1fr);
+    column-gap: 10px;
+    grid-template-rows: repeat(5, [row] 1fr);
+    row-gap: 5px;
+}
+.grid-item{
+    background-color: grey;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.grid-item-1{
+    grid-column: col 1/ span 4;
+    grid-row: row;
+}
+.grid-item-2{
+    grid-column: col 5 / span 4;
+    grid-row: row ;
+}
+.grid-item-3{
+    grid-column: col 9 / span 4;
+    grid-row: row;
+}
+
+.grid-item-4{
+    grid-column: col  / span 8;
+    grid-row: row 2;
+}
+.grid-item-5{
+    grid-column: col 9 / span 4;
+    grid-row: row 2;
+}
+.grid-item-6{
+    grid-column: col 1 / span 3;
+    grid-row: row 3;
+}
+.grid-item-7{
+    grid-column: col 4 / span 3;
+    grid-row: row 3;
+}
+.grid-item-8{
+    grid-column: col 7 / span 3;
+    grid-row: row 3;
+}
+.grid-item-9{
+    grid-column: col 10 / span 3;
+    grid-row: row 3;
+}
+.grid-item-10{
+    grid-column: col / span 6;
+    grid-row: row 4;
+}
+.grid-item-11{
+    grid-column: col 7 / span 6;
+    grid-row: row 4;
+}
+.grid-item-12{
+    grid-column: col / span 12;
+    grid-row: row 5;
+}
+
+.cols-3{
+    grid-column: span 3;
+}
+.cols-4{
+    grid-column: span 4;
+}
+.cols-6{
+    grid-column: span 6;
+}
+.cols-8{
+    grid-column: span 8;
+}
+.cols-12{
+    grid-column: span 12;
+}
