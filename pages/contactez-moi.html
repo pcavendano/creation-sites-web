@@ -9,100 +9,39 @@
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <style>
-      /*  input[type=text]{
-            display: block;
-            margin: 5px;
-        }
-        input[type=email]{
-            display: block;
-            margin: 5px;
-        }*/
-
-      input:not([type="radio"], [type="checkbox"]),
-      select,
-      textarea {
-        display: block;
-        margin: 5px;
-      }
-    </style>
   </head>
 
   <body>
     <header>
       <h1>Contactez moi</h1>
+      <nav>
+        <a href="../index.html" class="menu">Accueil</a>
+        <a href="education.html" class="menu">Éducation</a>
+        <a href="carriere.html" class="menu">Carrière</a>
+        <a href="realisations.html" class="menu">Réalisations</a>
+        <a href="contactez-moi.html" class="menu">Contactez moi</a>
+        <a href="validation.html" class="menu">Validation W3C</a>
+      </nav>
     </header>
-    <nav>
-      <a href="../index.html" class="menu">Accueil</a>
-      <a href="education.html" class="menu">Éducation</a>
-      <a href="carriere.html" class="menu">Carrière</a>
-      <a href="realisations.html" class="menu">Réalisations</a>
-      <a href="contactez-moi.html" class="menu">Contactez moi</a>
-      <a href="validation.html" class="menu">Validation W3C</a>
-    </nav>
     <main>
-      <form action="submit" method="poast">
+      <form action="submit" method="get">
         <label for="prenom">Prénom</label>
         <input
           type="text"
-          id="prenom"
-          name="inputPrenom"
+          name="prenom"
           required
+          id="prenom"
           maxlength="10"
           minlength="2"
-          placeholder="Ecrire votre prenom"
-          value="Peter"
         />
         <label for="nom">Nom</label>
-        <input type="text" id="nom" name="inputName" />
-        <label>Courriel<input type="email" name="inputCourriel" /></label>
-        <label
-          >Mot de passe <input type="password" name="inputMotDePasse"
-        /></label>
-        <label>Age <input type="number" name="inputAge" /></label>
-        <label
-          >Date de naissance <input type="date" name="inputDateNaissance"
-        /></label>
-        <fieldset>
-          <legend>Langages de programmation</legend>
-          <label
-            ><input
-              type="checkbox"
-              name="checkHTML"
-              value="HTML"
-              checked
-            />HTML</label
-          >
-          <label
-            ><input type="checkbox" name="checkCSS" value="CSS" />CSS</label
-          >
-          <label
-            ><input type="checkbox" name="checkPHP" value="PHP" />PHP</label
-          >
-        </fieldset>
-        <fieldset>
-          <legend>Il va fait beau le weekend</legend>
-          <label><input type="radio" name="weekend" value="1" /> Oui</label>
-          <label><input type="radio" name="weekend" value="0" /> Non</label>
-          <label
-            ><input type="radio" name="weekend" value="2" checked /> je ne sais
-            pas</label
-          >
-        </fieldset>
-        <label
-          >Ville
-          <select name="selectVille" required>
-            <option value="">Select</option>
-            <option value="1" selected>Montreal</option>
-            <option value="2">Quebec</option>
-          </select>
-        </label>
+        <input type="text" id="nom" name="name" />
+        <label>Courriel<input type="email" name="courriel" /></label>
         <label
           >Message
-          <textarea name="message">salut</textarea>
+          <textarea name="message">Écrivez votre message</textarea>
         </label>
-
-        <input type="submit" value="Save" />
+        <input type="submit" value="Envoyer" />
         <!--<button>Save Button</button>-->
       </form>
     </main>

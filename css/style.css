@@ -120,3 +120,20 @@ section {
 .cols-12{
     grid-column: span 12;
 }
+.text-font{
+    font-family: Oswald, Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: rgb(13, 117, 56);
+    letter-spacing: 6px;
+    text-shadow: 4px 8px #C0C0C0;
+} 
+p {
+    line-height: 26px;
+    text-align: justify;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    text-indent: 50px;
+}
